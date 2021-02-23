@@ -58,6 +58,13 @@ Let’s talk about the code for the VPC we just created. Notice a property calle
 
 
 
+
+
+
+
+
+
+
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
