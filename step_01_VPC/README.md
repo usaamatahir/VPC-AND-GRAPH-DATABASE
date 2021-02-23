@@ -12,14 +12,14 @@ At the end of this step you’ll have a VPC with two Availability Zones (AZ). Ea
 
 1: To setup the VPC you need to install a boilerplate by running the following command
 
-``` 
+```javascript
 cdk init app –language typescript
 ```
 
 
 2: Now you need to install the EC2 library
 
-```
+```javascript
 npm install @aws-cdk/aws-ec2 
 OR
 yarn add @aws-cdk/aws-ec2
@@ -27,7 +27,7 @@ yarn add @aws-cdk/aws-ec2
 
 3:  Open the stack file under the lib folder:
 Import the ec2 library & add this code in stack
-```
+```javascript
 const vpc = new ec2.Vpc(this, "VPC", {
       subnetConfiguration: [
         {
@@ -40,16 +40,16 @@ const vpc = new ec2.Vpc(this, "VPC", {
 ```
 
 4: Run the following command
-```
+```javascript
 cdk synth
 ```
 
 5: Then
-```
+```javascript
 cdk diff
 ```
 6: Then
-```
+```javascript
 cdk deploy
 ```
 
